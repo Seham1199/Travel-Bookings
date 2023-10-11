@@ -1,0 +1,729 @@
+/* ================BASE================ */
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 , p , span , h4 , h5 , input , a
+{
+    font-family: 'segoe ui light';
+}
+h2 , h3 
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+button
+{
+    border: none;
+}
+ul
+{
+    list-style: none;
+}
+/* ============= Query Modal ============= */
+.queryBtn
+{
+    bottom: 2%;
+    left: 4%;
+    z-index: 99;
+    border: 2px solid #11414B;
+    border-radius: 25%;
+    transition: all 0.5s;
+}
+.queryBtn i
+{
+    font-size: 1.3rem;
+    padding: 6px;
+    color: #11414B;
+    transition: color 0.5s;
+}
+.queryBtn:hover
+{
+transform: scale(1.1,1.1);
+background-color: #11414B;
+border: 2px solid #FFF;
+}
+.queryBtn:hover i
+{
+    color: #FFF;
+}
+.form-check label
+{
+    font-size: 0.85rem;
+}
+/* ============= Scroll Up =============== */
+.scrollUp
+{
+    bottom: 2%;
+    right: 4%;
+    z-index: 99;
+    background-color: #14505c;
+    border-radius: 25%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.scrollUp i
+{
+    font-size: 1rem;
+    padding: 12px;
+    color: #FFF;
+    transition: all 0.5s;
+}
+.scrollUp:hover
+{
+transform: scale(1.1,1.1);
+background-color: #0E373F;
+}
+.scrollUp:hover i
+{
+    transform: translateY(-3px);
+}
+/* ====================  Navber ============================ */
+#header
+{
+    z-index: 9999;
+}
+.nav-menu
+{
+    position: relative;
+}
+.nav-dark i
+{
+    color: #FFF;
+}
+
+ .nav-menu a
+{
+    color: #FFF;
+    text-transform: uppercase;
+}
+.nav-link:hover
+{
+    color: #FFF;
+}
+.nav-dark i
+{
+    cursor: pointer;
+}
+.nav-item-home::before
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+}
+.nav-item-about::before
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+}
+.nav-item-discover::before
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+}
+.nav-item-places::before
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+}
+.nav-item-booking::before
+{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+}
+@media screen and (max-width: 767px) {
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+      padding: 3rem;
+      transition: .6s;
+      background-color: #FFF;
+      z-index: 999;
+    }
+    .nav-menu a
+{
+    color: #777;
+    transition: color 0.5s;
+}
+.nav-menu a:hover
+{
+    color: #0E373F;
+}
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 0.5rem;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .nav-dark
+      {
+        padding-top: 40px;
+        margin-bottom: 20px;
+      }
+      .nav-dark i
+      {
+        color: #777;
+      }
+      .change-theme-name
+      {
+        display: block;
+      }
+      .active-link::before
+{
+    background-color: #777;
+}
+.close-icon
+{
+    cursor: pointer;
+}
+.slider-icon
+{
+    cursor: pointer;
+}
+/* Query Model */
+.queryBtn i
+{
+    font-size: 0.80rem;
+    padding: 5px;
+}
+/* Scroll Up */
+.scrollUp i
+{
+    font-size: 0.80rem;
+    padding: 10px;
+}
+}
+/* show menu */
+.show-menu {
+  right: -1;
+}
+/* ================================ Home ==============================  */
+#home
+{
+    background-image: url(../image/home1.jpg);
+    /* background-color: tomato; */
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+.span-home 
+{
+    font-size: 20px;
+}
+ h1
+{
+    font-size: 60px;
+    font-family: 'segoe ui light';
+}
+.btn-home 
+{
+    background-color: #14505c;
+    transition: all 0.5s;
+}
+.btn-home:hover
+{
+    background-color: #0E373F;
+}
+.home-info 
+{
+    background-color: #14505c;
+    right: 4rem;
+    bottom: -4rem;
+    width: 300px;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    column-gap: .5rem;
+}  
+.home-info h5
+{
+    font-size: 18px;
+}
+.home-info a , i
+{
+    font-size: 14px;
+    transition: transform 0.5s;
+}
+.home-info img
+{
+    width: 145px;
+    object-fit: cover;
+   transition: all 0.5s;
+}
+.home-info a:hover i
+{
+        transform: translateX(5px);
+}
+.home-info img:hover
+{
+   transform: scale(1.1);
+} 
+.modal-title
+{
+    color: #14505c;
+}
+/* ============================== Media Query for Home Section ==================================  */
+@media screen and (max-width: 767px){
+#home
+{
+    
+    background-size: cover;
+    background-position: 85% 85%;
+   
+}
+    .span-home 
+{
+    font-size: 18px;
+}
+    h1
+    {
+        font-size: 40px;
+        margin: 0;
+    }
+    a
+    {
+       display: block;
+       margin-bottom: 20px;
+    }
+.home-info 
+{
+   
+    right: 1rem;
+    bottom: -5rem;
+    width: 230px;
+    height: 130px;
+    padding: 1.5rem 1rem;
+ 
+}  
+.home-info h5
+{
+    font-size: 13px;
+    margin-top: 20px;
+}
+.home-info a , i
+{
+    font-size: 12px;
+}
+.home-info img
+{
+    width: 120px;
+    height: 70px;
+}
+}  
+/* ========= Animation Home =========== */
+.home-data , .home-social
+{
+    animation: homeContainer  3s alternate  ;
+    overflow: hidden;
+}
+.home-info
+{
+    animation: homeContainer  3s 0.2s alternate  ;
+}
+@keyframes homeContainer
+{
+  0%{transform: translateY(-80px);}
+  100%{transform: translateY(0px); display: block;}
+}
+/* ========================================= Booking ====================================== */
+.booking-container
+{
+    background-color: #14505c;
+}
+.btn-flight button
+{
+    color: #FFF;
+  border: 1px solid #FFF;
+    transition: all 0.5s;
+}
+.btn-flight button:hover
+{
+    background-color: #FFF;
+    border: 1px solid #0E373F;
+    color: #0E373F;
+}
+.more-options-cross-button
+{
+    transition: all 0.6s;
+}
+.more-options-cross-button:hover
+{
+    color: red;
+}
+/* =======================  About  ======================= */
+h2
+{
+    color: #11414B;
+}
+.about-data p 
+{
+    color: #44686F;
+}
+.about-img-one
+{
+    width: 75%;
+    height: 75%;
+}
+.about-img-two{
+    width: 100%;
+}
+ img
+{
+   transition: all 0.5s;
+}
+ img:hover
+{
+   transform: scale(1.1 , 1.1);
+}
+/* ============================== Media Query for About Section ==================================  */
+@media screen and (max-width: 767px){
+.about-data
+{
+    text-align: center;
+    padding: 20px;
+}
+.about-img-one
+{
+    width: 25%;
+    /* height: 50%; */
+}
+.about-img-two{
+    width: 30%;
+}
+}
+/* ============================  Discover  =============================== */
+.discover-img-one
+{
+    width: 20%;
+}
+.discover-img-two
+{
+    width: 22%;
+}
+.discover-img-three
+{
+    width: 20%;
+}
+.img-data span
+{
+    font-size: 0.85rem;
+} 
+.discover-title
+{
+    font-size: 2rem;
+} 
+/* ============================== Media Query for Discover Section ==================================  */
+@media screen and (max-width: 767px){
+.discover-img-one
+{
+    width: 27%;
+}
+.discover-img-two
+{
+    width: 30%;
+}
+.discover-img-three
+{
+    width: 27%;
+}
+.discover-title
+{
+    font-size: 1.5rem;
+} 
+.img-data span
+{
+    font-size: 0.85rem;
+}  
+.img-data h4
+{
+    font-size: 1rem;
+}  
+.img-data span
+{
+    font-size: 0.5rem;
+}  
+}
+/* ============================  Eperience  ============================= */
+.experience-data
+{
+    padding: 30px;
+}
+.experience-title 
+{
+  color: #11414B;
+}
+.experience-span 
+{
+  color: #44686F;
+}
+.experience-img
+{
+    width: 45%;
+}
+.experience-layer
+{
+    width: 20%;
+    right: 6rem;
+    top: 2rem;
+}
+/* ============================== Media Query for Experience Section ==================================  */
+@media screen and (max-width: 767px){
+.experience-data
+{
+    padding: 15px;
+}
+.experience-title 
+{
+   font-size: 1.2rem;
+}
+.experience-span 
+{
+   font-size: 0.85rem;
+}
+.experience-img
+{
+    width: 60%;
+}
+.experience-layer
+{
+    width: 22%;
+    right: 2rem;
+    top: 2rem;
+}
+}
+/* ===================================== Video ================================================= */
+.video-data p
+{
+    color: #44686F;
+}
+/* ==================================== Places ============================================== */
+.places-content h3
+{
+    font-size: 1.3rem;
+}
+.places-content h5
+{
+    font-size: 1rem;
+}
+.places-btn button
+{
+    padding: .75rem 1.1rem;
+    background-color: #14505c;
+    transition: all 0.5s;
+}
+.places-btn button:hover
+{
+    background-color: #11414B;
+}
+.places-btn button:hover i
+{
+        transform: translateX(5px);
+        
+} 
+.places-container
+{
+    grid-template-columns: repeat(3 , max-content);
+}
+.places-grid
+{
+    gap: 1.5rem;
+   
+}
+.place-card
+{
+    width: 180px;
+    height: 280px;
+}
+.place-card img
+{
+    transition: transform 0.5s;
+}
+.place-card:hover img
+{
+    transform: scale(1.1 , 1.1);
+}
+/* ============================== Media Query for Places Section ==================================  */
+@media screen and (max-width: 767px){
+    .places-container
+    {
+        grid-template-columns: repeat(2 , max-content);
+    }
+    .places-content h3
+{
+    font-size: 1.1rem;
+}
+.places-content h5
+{
+    font-size: 0.85rem;
+}
+.places-laryer
+{
+    font-size: 0.85rem;
+}
+}
+/* ============================= Sponsor =================================== */
+.sponsor-container
+{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    row-gap: 2.5rem;
+    column-gap: 4rem;
+}
+.sponsor-img
+{
+    width: 120px;
+    filter: invert(0.7);
+}
+.sponsor-img img
+{
+    transition: all 0.6s;
+}
+.sponsor-img:hover img
+{
+    filter: invert(0.5);
+}
+/* ============================== Media Query for sponsor Section ==================================  */
+@media screen and (max-width: 767px){
+    .sponsor-img
+    {
+        width: 80px;
+        filter: invert(0.7);
+    }
+}
+/* ============================= Footer ======================================= */
+.footer-grid
+{
+    grid: 150px / auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+.footer-data h3
+{
+    font-size: 1.5rem;
+    color: #11414B;
+    margin-bottom: 20px;
+}
+.footer-data p
+{
+    color: #44686F;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.footer-social-link
+{
+    color: #11414B;
+}
+.footer-social-link i
+{
+transition: all 0.6s;
+}
+.footer-social-link:hover i
+{
+    color: #0E373F;
+}
+.footer-list a
+{
+    color: #44686F;
+    transition: color 0.5s;
+    padding: 0px 5px;
+}
+.footer-list a:hover
+{
+    color: #0E373F;
+}
+.footer-links
+{
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.footer-links p
+{
+    color: #919EA1;
+    font-size: 0.90rem;
+    margin-bottom: 0px;
+}
+.footer-links a
+{
+    color: #919EA1;
+    font-size: 0.90rem;
+    transition: color 0.5s;
+}
+.footer-links a:hover
+{
+    color: #44686F;
+}
+/* ============================== Media Query for Footer Section ==================================  */
+@media screen and (max-width: 767px){
+    .footer-data h3
+    {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .footer-data p
+    {
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+    }
+    .footer-list li
+    {
+       line-height: 0.5rem;
+    }
+    .footer-links
+{
+     margin-top: 50px;
+     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}.footer-links  p 
+{
+    margin-bottom: 30px;
+    font-size: 0.75rem;
+}
+.footer-links a
+{
+    font-size: 0.75rem;
+}
+.footer-terms-link
+{
+justify-content: center;
+}
+}
